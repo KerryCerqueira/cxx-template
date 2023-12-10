@@ -1,0 +1,4 @@
+[alias]
+	cmake = !cmake -S $(git rev-parse --show-toplevel) -B $(git rev-parse --show-toplevel)/build
+	make = !make -C $(git rev-parse --show-toplevel)/build
+	run = "!$(git rev-parse --show-toplevel)/build/bin/\"$1\" #"
